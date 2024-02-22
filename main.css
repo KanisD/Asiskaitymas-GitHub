@@ -8,14 +8,16 @@
 
 body {
     font-family: 'Source Sans 3', sans-serif;
-    background-image: url(./resources/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0; 
-    padding: 0; 
+  
 }
 main {
     height: fit-content;
+    background-image: url(./resources/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1040px;;
+    margin: 0 auto; 
+    padding: 0; 
 }
 
 
@@ -123,6 +125,10 @@ h1{
 
 
 @media (max-width:1000px){
+    main{
+        width: 600px;
+        margin: 0 auto;
+    }
 
     .content{
         height: 600px;
@@ -159,9 +165,9 @@ h1{
         
     }}
 
-    .tab1 {
+    .tab1, .tab2, .tab3, .tab4 {
         
-        display:flex;
+        display:none;
         flex-direction: column;
         height: 400px;
         width: 600px;
@@ -181,8 +187,26 @@ h1{
     }
     
     
-    .tab1 h1 {
+    .tab1, .tab2, .tab3, .tab4 h1 {
         text-decoration: underline;
+    }
+
+    .tab4 img{
+        height: 40%; 
+        width: 100%; 
+        object-fit: cover;
+    }
+
+    .tab2 img{
+        height: 40%; 
+        width: 100%; 
+        object-fit: cover;
+    }
+
+    .tab3 img{
+        height: 40%; 
+        width: 100%; 
+        object-fit: cover;
     }
 
     .hidden {
