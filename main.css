@@ -1,0 +1,58 @@
+main {
+    /* Set the background image */
+    background-image: url(./resources/bg.jpg);
+    background-size: cover;
+    /* &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(105, 105, 105, 0.251);
+    } */
+}
+
+#content{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+}
+.gem{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%; 
+    overflow: hidden;
+    text-align: center;
+}
+
+.gem img{
+    height: 20px;
+}
+
+.allText{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color:white;
+    margin-left:20px;
+    margin-right:20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.allText a{
+    color: white;
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    border: 1px solid white;
+    background-color: transparent;
+    color:white;
+    font-weight: 200;
+}
