@@ -1,40 +1,55 @@
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('./path/to/source-sans-3.woff2') format('woff2');
+        
+}
+
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
 main {
-    /* Set the background image */
     background-image: url(./resources/bg.jpg);
     background-size: cover;
-    /* &::before {
+     &::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(105, 105, 105, 0.251);
+        background: rgba(81, 81, 81, 0.14);
     } */
 }
 
 #content{
-    height: 500px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:70px;
 }
-.gem{
-    height: 40px;
-    width: 40px;
+
+.gem {
+    height: 60px;
+    width: 60px;
     border: 1px solid white;
-    border-radius: 50%; 
+    border-radius: 50%;
     overflow: hidden;
-    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
 }
 
-.gem img{
-    height: 20px;
+.gem img {
+    height: 25px;
+    width: auto; 
 }
 
 .allText{
+    
     border-bottom: 1px solid white;
     border-top: 1px solid white;
     color:white;
@@ -44,15 +59,56 @@ main {
     padding: 20px;
 }
 
-.allText a{
-    color: white;
+
+.allText a {
+    color: rgba(255, 255, 255, 0.753);
 }
 
-button{
+button {
     height: 30px;
     width: 100px;
     border: 1px solid white;
     background-color: transparent;
-    color:white;
+    color: rgba(255, 255, 255, 0.753);
     font-weight: 200;
+    margin:0;
+    padding: 0;
+}
+
+button + button {
+    margin-left: -5px; 
+}
+
+.line1{
+    height: auto;
+    width: 70px;
+    border-top:1px solid white;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 160px; 
+    left: 50; 
+    
+}
+
+.line2{
+    height: auto;
+    width: 70px;
+    border-top:1px solid white;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 367px; 
+    left: 50; 
+    
+}
+
+p{
+    font-size: small;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+h1{
+    font-weight: 600;
+    letter-spacing: 5px; 
 }
