@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('./path/to/source-sans-3.woff2') format('woff2');   
+}
+
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
+main {
+    background-image: url(./resources/bg.jpg);
+    background-size:cover;
+
+     &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(81, 81, 81, 0.14);
+    } */
+}
+
+
+.content{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+}
+
+.gem {
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.gem img {
+    height: 25px;
+    width: auto; 
+}
+
+.allText{
+    
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color:white;
+    margin-left:20px;
+    margin-right:20px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.allText a {
+    color: rgba(255, 255, 255, 0.753);
+    transition: color 0.3s ease; 
+}
+
+.allText a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+button {
+    height: 30px;
+    width: 100px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 200;
+    margin:0;
+    padding: 0;
+}
+
+button :hover{
+
+}
+
+button + button {
+    margin-left: -5px; 
+}
+
+.line1{
+    height: auto;
+    width: 70px;
+    border-top:1px solid white;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 160px; 
+    left: 50; 
+    
+}
+
+.line2{
+    height: auto;
+    width: 70px;
+    border-top:1px solid white;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 367px; 
+    left: 50; 
+    
+}
+
+p{
+    font-size: small;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+h1{
+    font-weight: 600;
+    letter-spacing: 5px; 
+}
+
+
+@media (max-width:1000px){
+
+    .content{
+        height: 600px;
+    }
+    .buttons{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+    }
+    
+    button{
+        display:flex;
+        align-items: center;
+        justify-content:center ;
+        width: 95%;
+    }
+
+    .line1{
+        height: auto;
+        width: 70px;
+        border-top:1px solid white;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 167px; 
+        left: 50; 
+        
+    }
+    
+    .line2{
+        height: auto;
+        width: 70px;
+        border-top:1px solid white;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 390px; 
+        left: 50; 
+        
+    }}
