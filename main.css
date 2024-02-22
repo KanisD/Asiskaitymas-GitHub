@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('./path/to/source-sans-3.woff2') format('woff2');
-        
+    src: url('./path/to/source-sans-3.woff2') format('woff2');   
 }
 
 
@@ -10,7 +9,8 @@ body {
 }
 main {
     background-image: url(./resources/bg.jpg);
-    background-size: cover;
+    background-size:cover;
+
      &::before {
         content: "";
         position: absolute;
@@ -22,7 +22,8 @@ main {
     } */
 }
 
-#content{
+
+.content{
     height: 480px;
     display: flex;
     flex-direction: column;
@@ -62,7 +63,14 @@ main {
 
 .allText a {
     color: rgba(255, 255, 255, 0.753);
+    transition: color 0.3s ease; 
 }
+
+.allText a:hover {
+    cursor: pointer;
+    color: black;
+}
+
 
 button {
     height: 30px;
@@ -73,6 +81,10 @@ button {
     font-weight: 200;
     margin:0;
     padding: 0;
+}
+
+button :hover{
+
 }
 
 button + button {
@@ -112,3 +124,45 @@ h1{
     font-weight: 600;
     letter-spacing: 5px; 
 }
+
+
+@media (max-width:1000px){
+
+    .content{
+        height: 600px;
+    }
+    .buttons{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+    }
+    
+    button{
+        display:flex;
+        align-items: center;
+        justify-content:center ;
+        width: 95%;
+    }
+
+    .line1{
+        height: auto;
+        width: 70px;
+        border-top:1px solid white;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 167px; 
+        left: 50; 
+        
+    }
+    
+    .line2{
+        height: auto;
+        width: 70px;
+        border-top:1px solid white;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 390px; 
+        left: 50; 
+        
+    }}
